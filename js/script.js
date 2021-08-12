@@ -1,8 +1,8 @@
 const filterBtn = document.querySelectorAll('.filter-btn'),
       recordsWrap = document.querySelector('.records'),
-      recordsNumbers = document.querySelectorAll('.number')
-// const skills_wrap = document.querySelector('skills');
-// const skills_bars = document.querySelectorAll('skill-progress');
+      recordsNumbers = document.querySelectorAll('.number'),
+      skills_wrap = document.querySelector('.skills'),
+      skills_bars = document.querySelectorAll('.skill-progress');
 
 filterBtn.forEach((btn) =>{
    btn.addEventListener(('click'), () =>{
@@ -27,7 +27,7 @@ window.addEventListener("scroll", () => {
  
  function checkScroll(el) {
    let rect = el.getBoundingClientRect();
-   if (window.innerHeight >= rect.top + el.offsetHeight) return true;
+   if (window.innerHeight >=rect.top + el.offsetHeight) return true;
    return false;
  }
  
@@ -37,8 +37,8 @@ window.addEventListener("scroll", () => {
  }
  
  function countUp() {
-   if (!checkScroll(records_wrap)) return;
-   records_numbers.forEach((numb) => {
+   if (!checkScroll(recordsWrap)) return;
+   recordsNumbers.forEach((numb) => {
      const updateCount = () => {
        let currentNum = +numb.innerText;
        let maxNum = +numb.dataset.num;
