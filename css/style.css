@@ -391,6 +391,7 @@ nav .links ul a:hover {
 
 .filter {
   width: 100%;
+  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -721,4 +722,201 @@ nav .links ul a:hover {
   font-weight: 500;
   text-transform: uppercase;
   font-size: 1.2rem;
+}
+
+.blog .title, .testimonials .title {
+  color: black;
+}
+
+.blog .title::before, .testimonials .title::before {
+  color: #784cfb;
+}
+
+.blog .title::after, .testimonials .title::after {
+  background-color: #784cfb;
+}
+
+.blog-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.blog-wrap {
+  margin: 1.3rem .5rem;
+}
+
+.blog-card {
+  max-width: 420px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f6f7fb;
+  -webkit-transition: .3s;
+  transition: .3s;
+  position: relative;
+}
+
+.blog-card::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  content: '';
+  background-color: #784cfb;
+}
+
+.blog-card:hover img {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.blog-card:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.blog-card:hover img {
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
+}
+
+.blog-card:hover::after {
+  height: 8px;
+}
+
+.blog-image {
+  width: 100%;
+  height: 270px;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: initial;
+  height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.blog-content {
+  padding: 2.1rem 2.2rem 2.7rem 2.2rem;
+}
+
+.blog-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blog-info h5 {
+  color: #784cfb;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.05rem;
+}
+
+.blog-text {
+  margin: 1.5rem 0 1.5rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.testimonials {
+  background-color: #f9fafb;
+  overflow: hidden;
+}
+
+.reviews {
+  overflow: hidden;
+}
+
+.review {
+  position: relative;
+  padding: 2rem 1.5rem;
+}
+
+.qoute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.04;
+  color: #784cfb;
+}
+
+.testi-content {
+  margin: 5rem 0 0 0;
+}
+
+.rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.4rem;
+  color: #ebc000;
+  margin-bottom: 1.5rem;
+}
+
+.rate i {
+  margin-right: .2rem;
+}
+
+.review-text {
+  font-size: 1.35rem;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.7;
+}
+
+.review-info {
+  margin-top: 2rem;
+}
+
+.review-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.897);
+}
+
+.review-job {
+  font-size: 1.15rem;
+  font-weight: 300;
+  color: #777;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  display: none;
+}
+
+.review-nav {
+  bottom: 2.2rem;
+  top: initial;
+  font-size: 1.8rem;
+  color: #784cfb;
+}
+
+.swiper-button-next {
+  right: 2rem;
+  left: initial;
+}
+
+.swiper-button-prev {
+  right: 4.5rem;
+  left: initial;
 }

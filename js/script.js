@@ -42,7 +42,7 @@ window.addEventListener("scroll", () => {
      const updateCount = () => {
        let currentNum = +numb.innerText;
        let maxNum = +numb.dataset.num;
-       let speed = 100;
+       let speed = 50;
        const increment = Math.ceil(maxNum / speed);
  
        if (currentNum < maxNum) {
@@ -53,6 +53,18 @@ window.addEventListener("scroll", () => {
        }
      };
  
-     setTimeout(updateCount, 400);
+     setTimeout(updateCount, 1400);
    });
  }
+ var mySwiper = new Swiper('.swiper-container',{
+   speed: 1100,
+   slidesPerView: 1,
+   loop: true,
+   autoplay:{
+     delay: 5000,
+   },
+   navigation:{
+     nextEl: '.swiper-button-next',
+     prevEl: '.swiper-button-prev',
+   }
+ });
