@@ -600,7 +600,7 @@ nav .links ul a:hover {
 
 .skill-html-bar::after {
   content: '';
-  width: 80%;
+  width: 56%;
   height: 8px;
   border-radius: 4px;
   position: absolute;
@@ -608,7 +608,7 @@ nav .links ul a:hover {
 }
 
 .skill-css-bar {
-  width: 50%;
+  width: 70%;
   height: 8px;
   border-radius: 4px;
   background-color: #ece6fa;
@@ -618,7 +618,7 @@ nav .links ul a:hover {
 
 .skill-css-bar::after {
   content: '';
-  width: 80%;
+  width: 59%;
   height: 8px;
   border-radius: 4px;
   position: absolute;
@@ -626,7 +626,7 @@ nav .links ul a:hover {
 }
 
 .skill-js-bar {
-  width: 40%;
+  width: 70%;
   height: 8px;
   border-radius: 4px;
   background-color: #ece6fa;
@@ -636,7 +636,7 @@ nav .links ul a:hover {
 
 .skill-js-bar::after {
   content: '';
-  width: 80%;
+  width: 30%;
   height: 8px;
   border-radius: 4px;
   position: absolute;
@@ -657,4 +657,68 @@ nav .links ul a:hover {
   top: 20px;
   left: 0;
   line-height: 0;
+}
+
+.records {
+  position: relative;
+  background-color: #784cfb;
+  padding: 5.2rem 0;
+}
+
+.records .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-grid-column: 1;
+  grid-column: 1.5rem;
+  -ms-grid-row: 2;
+  grid-row: 2rem;
+}
+
+.record-cicle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.record-cicle.active {
+  color: #333;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.number {
+  font-weight: 400;
+  font-size: 2.35rem;
+}
+
+.sub-title {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
