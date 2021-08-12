@@ -589,7 +589,7 @@ nav .links ul a:hover {
   margin-bottom: 0.3rem;
 }
 
-.skill-bar {
+.skill-html-bar {
   width: 70%;
   height: 8px;
   border-radius: 4px;
@@ -598,15 +598,49 @@ nav .links ul a:hover {
   overflow: hidden;
 }
 
-.skill-progress {
+.skill-html-bar::after {
+  content: '';
+  width: 80%;
+  height: 8px;
+  border-radius: 4px;
   position: absolute;
-  height: 100%;
-  width: 0%;
-  top: 0;
-  left: 0;
-  background-color: var(--main-color);
-  -webkit-transition: 1s;
-  transition: 1s;
+  background-color: #784cfb;
+}
+
+.skill-css-bar {
+  width: 50%;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #ece6fa;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-css-bar::after {
+  content: '';
+  width: 80%;
+  height: 8px;
+  border-radius: 4px;
+  position: absolute;
+  background-color: #784cfb;
+}
+
+.skill-js-bar {
+  width: 40%;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #ece6fa;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-js-bar::after {
+  content: '';
+  width: 80%;
+  height: 8px;
+  border-radius: 4px;
+  position: absolute;
+  background-color: #784cfb;
 }
 
 .about .column-1 {

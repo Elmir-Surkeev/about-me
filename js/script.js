@@ -1,6 +1,6 @@
 const filterBtn = document.querySelectorAll('.filter-btn');
-const skills_wrap = document.querySelector('skills');
-const skills_bars = document.querySelectorAll('skill-progress');
+// const skills_wrap = document.querySelector('skills');
+// const skills_bars = document.querySelectorAll('skill-progress');
 filterBtn.forEach((btn) =>{
    btn.addEventListener(('click'), () =>{
       filterBtn.forEach((button) => button.classList.remove('active'));
@@ -14,37 +14,37 @@ window.addEventListener(('scroll'), () =>{
    skillsEffect();
    countUp();
 })
-function checkScroll(el) {
-   let rect = el.getBoundingClientRect();
-   if (window.innerHeight >= rect.top + el.offsetHeight) return true;
-   return false;
- }
+// function checkScroll(el) {
+//    let rect = el.getBoundingClientRect();
+//    if (window.innerHeight >= rect.top + el.offsetHeight) return true;
+//    return false;
+//  }
  
- function skillsEffect() {
-   if (!checkScroll(skills_wrap)) return;
-   skills_bars.forEach((skill) => (skill.style.width = skill.dataset.progress));
- }
+//  function skillsEffect() {
+//    if (!checkScroll(skills_wrap)) return;
+//    skills_bars.forEach((skill) => (skill.style.width = skill.dataset.progress));
+//  }
  
- function countUp() {
-   if (!checkScroll(records_wrap)) return;
-   records_numbers.forEach((numb) => {
-     const updateCount = () => {
-       let currentNum = +numb.innerText;
-       let maxNum = +numb.dataset.num;
-       let speed = 100;
-       const increment = Math.ceil(maxNum / speed);
+//  function countUp() {
+//    if (!checkScroll(records_wrap)) return;
+//    records_numbers.forEach((numb) => {
+//      const updateCount = () => {
+//        let currentNum = +numb.innerText;
+//        let maxNum = +numb.dataset.num;
+//        let speed = 100;
+//        const increment = Math.ceil(maxNum / speed);
  
-       if (currentNum < maxNum) {
-         numb.innerText = currentNum + increment;
-         setTimeout(updateCount, 1);
-       } else {
-         numb.innerText = maxNum;
-       }
-     };
+//        if (currentNum < maxNum) {
+//          numb.innerText = currentNum + increment;
+//          setTimeout(updateCount, 1);
+//        } else {
+//          numb.innerText = maxNum;
+//        }
+//      };
  
-     setTimeout(updateCount, 400);
-   });
-}
+//      setTimeout(updateCount, 400);
+//    });
+// }
 
 
 

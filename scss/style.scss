@@ -460,24 +460,55 @@ nav{
    margin-bottom: 0.3rem;
  }
  
- .skill-bar {
+ .skill-html-bar {
    width: 70%;
    height: 8px;
    border-radius: 4px;
    background-color: #ece6fa;
    position: relative;
    overflow: hidden;
+   &::after{
+      content: '';
+      width: 80%;
+      height: 8px;
+      border-radius: 4px;
+      position: absolute;
+      background-color: $main-color;
+   }
  }
- 
- .skill-progress {
-   position: absolute;
-   height: 100%;
-   width: 0%;
-   top: 0;
-   left: 0;
-   background-color: var(--main-color);
-   transition: 1s;
+ .skill-css-bar {
+   width: 50%;
+   height: 8px;
+   border-radius: 4px;
+   background-color: #ece6fa;
+   position: relative;
+   overflow: hidden;
+   &::after{
+      content: '';
+      width: 80%;
+      height: 8px;
+      border-radius: 4px;
+      position: absolute;
+      background-color: $main-color;
+   }
  }
+ .skill-js-bar {
+   width: 40%;
+   height: 8px;
+   border-radius: 4px;
+   background-color: #ece6fa;
+   position: relative;
+   overflow: hidden;
+   &::after{
+      content: '';
+      width: 80%;
+      height: 8px;
+      border-radius: 4px;
+      position: absolute;
+      background-color: $main-color;
+   }
+ }
+
  
  .about .column-1 {
    position: relative;
@@ -494,8 +525,17 @@ nav{
    left: 0;
    line-height: 0;
  }
- 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
