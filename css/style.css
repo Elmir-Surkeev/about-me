@@ -56,7 +56,10 @@ img {
 }
 
 .column-2 {
-  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-left: 18rem;
+  width: 400px;
+
 }
 
 .btn {
