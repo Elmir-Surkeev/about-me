@@ -594,7 +594,7 @@ nav .links ul a:hover {
 }
 
 .skill-html-bar {
-  width: 70%;
+  width: 95%;
   height: 8px;
   border-radius: 4px;
   background-color: #ece6fa;
@@ -604,7 +604,7 @@ nav .links ul a:hover {
 
 .skill-html-bar::after {
   content: '';
-  width: 56%;
+  width: 84%;
   height: 8px;
   border-radius: 4px;
   position: absolute;
@@ -612,7 +612,7 @@ nav .links ul a:hover {
 }
 
 .skill-css-bar {
-  width: 70%;
+  width: 95%;
   height: 8px;
   border-radius: 4px;
   background-color: #ece6fa;
@@ -622,7 +622,7 @@ nav .links ul a:hover {
 
 .skill-css-bar::after {
   content: '';
-  width: 59%;
+  width: 90%;
   height: 8px;
   border-radius: 4px;
   position: absolute;
@@ -630,7 +630,7 @@ nav .links ul a:hover {
 }
 
 .skill-js-bar {
-  width: 70%;
+  width: 90%;
   height: 8px;
   border-radius: 4px;
   background-color: #ece6fa;
@@ -640,13 +640,55 @@ nav .links ul a:hover {
 
 .skill-js-bar::after {
   content: '';
-  width: 30%;
+  width: 60%;
+  height: 8px;
+  border-radius: 4px;
+  position: absolute;
+  background-color: #784cfb;
+}
+.skill-react-bar {
+  width: 90%;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #ece6fa;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-react-bar::after {
+  content: '';
+  width: 45%;
   height: 8px;
   border-radius: 4px;
   position: absolute;
   background-color: #784cfb;
 }
 
+.skill-react-bar {
+  width: 90%;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #ece6fa;
+  position: relative;
+  overflow: hidden;
+}
+.skill-react-bar {
+  width: 90%;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #ece6fa;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-git-bar::after {
+  content: '';
+  width: 20%;
+  height: 8px;
+  border-radius: 4px;
+  position: absolute;
+  background-color: #784cfb;
+}
 .about .column-1 {
   position: relative;
 }
