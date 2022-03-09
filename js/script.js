@@ -41,8 +41,8 @@ window.addEventListener("scroll", () => {
    recordsNumbers.forEach((numb) => {
      const updateCount = () => {
        let currentNum = +numb.innerText;
-       let maxNum = +numb.dataset.num;
-       let speed = 50;
+       let maxNum = +numb.dataset.num ;
+       let speed = 10;
        const increment = Math.ceil(maxNum / speed);
  
        if (currentNum < maxNum) {
